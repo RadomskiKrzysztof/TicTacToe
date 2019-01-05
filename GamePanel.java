@@ -31,7 +31,7 @@ public class GamePanel extends JPanel implements ActionListener {
 		add(panels[0]);
 		panels[1] = new SecondPanel("Kto zaczyna?", player, computer);
 		add(panels[1]);
-		panels[2] = new SecondPanel("Graczu rozpoczynaj¹cy, wybierz znak:", buttonO, buttonX);
+		panels[2] = new SecondPanel("Graczu rozpoczynajÂ¹cy, wybierz znak:", buttonO, buttonX);
 		add(panels[2]);
 		panels[3] = new SecondPanel();
 		add(panels[3]);
@@ -43,11 +43,11 @@ public class GamePanel extends JPanel implements ActionListener {
 		currentCard++;
 		Object source = event.getSource();
 		//if (source == onePlayer) {
-			
+			// miejsce na kod dla wersji gracz vs. komputer
 		//}
 		if (source == twoPlayers) {
-			response = JOptionPane.showInputDialog(null, "Graczu 1, podaj swoje imiê");
-			response2 = JOptionPane.showInputDialog(null, "Graczu 2, podaj swoje imiê");
+			response = JOptionPane.showInputDialog(null, "Graczu 1, podaj swoje imiÃª");
+			response2 = JOptionPane.showInputDialog(null, "Graczu 2, podaj swoje imiÃª");
 			player.setText(response);
 			computer.setText(response2);
 			user.name = response;
@@ -353,7 +353,7 @@ class SecondPanel extends JPanel {
 		add(fencingFloor, BorderLayout.CENTER);
 		nextRound = new JButton("Kolejna tura");
 		zero = new JButton("Od nowa"); // cofa do 1 karty
-		exit = new JButton("WyjdŸ");
+		exit = new JButton("WyjdÂŸ");
 		JPanel threeButtons = new JPanel();
 		threeButtons.add(nextRound);
 		threeButtons.add(zero);
